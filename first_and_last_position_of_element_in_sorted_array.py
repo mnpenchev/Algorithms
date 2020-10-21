@@ -39,5 +39,5 @@ class Solution:
 
 
 s = Solution()
-answer = s.range([10, 11, 12, 12, 12, 13, 14], 12)
+answer = s.range([10, 11, 11, 12, 12, 12, 12, 13, 14], 11)
 print(answer)
