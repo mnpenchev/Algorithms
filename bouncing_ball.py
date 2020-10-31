@@ -18,22 +18,21 @@ Example:
 
 
 def bouncing_ball(h, bounce, window):
-    if not h > 0:
+    if h < 0:
         return -1
-    if not bounce > 0 and bounce < 1:
+    if 0 > bounce > 1:
         return -1
-    if not window < h:
+    if window > h:
         return -1
 
-    times_seen = 0
+    times_seen = 1
     new_height = h
     while new_height > window:
-        times_seen += 1
         new_height = new_height * bounce
-        if new_height <= window:
-            break
+        if new_height > window:
+            times_seen += 2
         else:
-            times_seen += 1
+            break
     return times_seen
 
 
