@@ -30,7 +30,7 @@ def bouncing_ball(h, bounce, window):
     while new_height > window:
         times_seen += 1
         new_height = new_height * bounce
-        if new_height < window:
+        if new_height <= window:
             break
         else:
             times_seen += 1
