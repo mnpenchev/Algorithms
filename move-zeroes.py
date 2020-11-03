@@ -36,3 +36,7 @@ def move_zeros_alltypesdata(array):
 
 
 print(move_zeros_alltypesdata([None, 0, False, 0, 3, "a", 5, 4, 0]))
+
+
+def move_zeros1(array):  # sorted by key
+    return sorted(array, key=lambda x: x == 0 and type(x) is not bool)
